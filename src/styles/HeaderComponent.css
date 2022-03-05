@@ -3,6 +3,9 @@ header {
     height: 80px;
     background: white;
     transition: 0.5s ease-in;
+    -webkit-transition: 0.5s ease-in;
+    -moz-transition: 0.5s ease-in;
+    -o-transition: 0.5s ease-in;
 }
 
 
@@ -74,6 +77,9 @@ a{
     margin-top:15px;
     cursor:pointer;
     animation:showMobileMenu 5s;
+    -webkit-animation:showMobileMenu 5s;
+    -moz-animation:showMobileMenu 5s;
+    -o-animation:showMobileMenu 5s;
 }
 
 .mobile-menu li:hover{
