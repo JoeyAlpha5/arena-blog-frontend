@@ -2,7 +2,7 @@
 
 The Arena Blog curates travel stories from travellers from all parts of the world. If you're planning a trip to any part of the world, be sure to checkout what others have to say about the location.
 
-This documentation provides a breakdown of the Frontend code for this application. I took inspiration form [Unsplash's](https://unsplash.com/) homepage layout and [Substack's](https://snyder.substack.com/p/what-questions-should-i-answer-about/comments?s=r) minimal blog post design when designing my application.
+This documentation provides a breakdown of the Frontend code for this application. I took inspiration from [Unsplash's](https://unsplash.com/) homepage layout and [Substack's](https://snyder.substack.com/p/what-questions-should-i-answer-about/comments?s=r) minimal blog post design when designing my application.
 
 Use the sections listed below to get started with running the application on your machine. 
 
@@ -64,3 +64,9 @@ Article Screen
 ![Arena Blog](src/assets/screenshots/Article-light-mode.png?raw=true "Arena Blog - Article screen")
 ![Arena Blog](src/assets/screenshots/Article-dark-mode.png?raw=true "Arena Blog - Article screen")
 
+
+### Future improvements
+
+The application is far from perfect. The app could do with a slightly better font, additional features on the article screen such as a comment section and social media share options. The app is also missing a footer.
+
+As the application grows, adding TypeScript would also be beneficial so that error warnings are seen during development and not at runtime. Defining the data types coming from the API will also be beneficial.
