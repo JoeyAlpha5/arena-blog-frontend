@@ -39,7 +39,7 @@
 }
 
 #home-screen-search-input{
-    width:50%;
+    width:100%;
     height:50px;
     border-radius:10px;
     border:none;
@@ -66,6 +66,20 @@
     text-align: center;
 }
 
+#home-screen-search-container {
+    width: 50%;
+    display: flex;
+    position: relative;
+}
+
+
+#home-screen-banner-search-icon{
+    position: absolute;
+    right: 0;
+    margin-right: 14px;
+    margin-top: 11px;
+    cursor: pointer;
+}
 
 .home-screen-banner-content{
     color: white;
@@ -79,11 +93,15 @@
 
 
 @media (max-width:992px){
-    #home-screen-search-input{
+    #home-screen-search-container{
         width: 90%;
     }
 
     #home-screen-banner-quote-of-the-day{
         display: none;
+    }
+
+    #home-screen-search-input::placeholder{
+        font-size: 13px;
     }
 }
