@@ -1,0 +1,102 @@
+header {
+    width: 100%;
+    height: 80px;
+    background: white;
+    transition: 0.5s ease-in;
+}
+
+
+h1{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+h1 span{
+    color: #FFA500;
+}
+
+a{
+    text-decoration:none !important;
+    color:unset !important;
+}
+
+.menu-icon{
+    display: none;
+    cursor: pointer;
+}
+
+.desktop-menu{
+    display: inline-flex;
+    list-style-type: none;
+    padding:0px;
+}
+
+.desktop-menu li{
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.desktop-menu li:hover{
+    text-decoration: underline;
+    text-decoration-color: #FFA500;
+}
+
+.login-button{
+    width: 100px;
+    height: 33px;
+    background-color: #FFA500;
+    border: 0px;
+    border-radius: 5px;
+    color: white;
+}
+
+
+.header-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+
+.mobile-menu{
+    display: none;
+    text-align: center;
+    padding:0px;
+}
+
+@keyframes showMobileMenu {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.mobile-menu li{
+    margin-top:15px;
+    cursor:pointer;
+    animation:showMobileMenu 5s;
+}
+
+.mobile-menu li:hover{
+    text-decoration: underline;
+    text-decoration-color: #FFA500;
+}
+
+@media (max-width:992px){
+    .desktop-menu, .login-button{
+        display: none;
+    }
+
+    .menu-icon, .mobile-menu{
+        display: block;
+    }
+
+    .expanded-header {
+        height: 250px;
+    }
+
+    .expanded-container{
+        height:40%;
+    }
+    
+    
+}
