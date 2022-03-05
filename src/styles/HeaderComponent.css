@@ -106,3 +106,11 @@ a{
     
     
 }
+
+/* dark mode */
+@media (prefers-color-scheme: dark) {
+    header {
+        background-color: #15181B;
+        color: white;
+    }
+}
