@@ -2,7 +2,9 @@
 
 The Arena Blog curates travel stories from travellers from all parts of the world. If you're planning a trip to any part of the world, be sure to checkout what others have to say about the location.
 
-This documentation provides a breakdown of the Frontend code for this application. Use the sections listed below to get started with running the application on your machine.
+This documentation provides a breakdown of the Frontend code for this application. I took inspiration form [Unsplash's](https://unsplash.com/) homepage layout and [Substack's](https://snyder.substack.com/p/what-questions-should-i-answer-about/comments?s=r) minimal blog post design when designing my application.
+
+Use the sections listed below to get started with running the application on your machine. 
 
 ## Documentation sections
 - [Setting up the app](#setting-up-the-app)
@@ -33,13 +35,17 @@ npm start
 
 ### Third party libraries
 
-This section lists all the third party libraries and dependencies that have been used and the reasons for including them.
+This section lists all the third party libraries, dependencies and images that have been used and the reasons for including them.
 
 1. [React Router](https://reactrouter.com/) has been added to provide frontend routing.
 
 2. [React Icons](https://react-icons.github.io/react-icons/). The Material menu and search icons have been imported from the React Icons library.
 
 3. [Bootstrap](https://getbootstrap.com/). The Arena Blog uses Bootstrap to achieve its minmal and responsive layout.
+
+4. [React Date Formatter](https://www.npmjs.com/package/react-date-formatter). This is a JavaScript package I built and published on NPM 6 months ago. It provides an easy way to format dates by simply providing the date string and specifying the format.
+
+5. [Article Images](https://unsplash.com/@jalome). I've used my own stock images that I have published on Unsplash.
 
 
 ### Application preview
