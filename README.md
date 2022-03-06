@@ -1,4 +1,4 @@
-# Arena Blog
+# Arena Blog - Frontend
 
 The Arena Blog curates travel stories from travellers from all parts of the world. If you're planning a trip to any part of the world, be sure to checkout what others have to say about the location.
 
@@ -69,4 +69,7 @@ Article Screen
 
 The application is far from perfect. The app could do with a slightly better font, additional features on the article screen such as a comment section and social media share options. The app is also missing a footer.
 
-As the application grows, adding TypeScript would also be beneficial so that error warnings are seen during development and not at runtime. Defining the data types coming from the API will also be beneficial.
+As the application grows, adding TypeScript would also be beneficial so that error warnings are seen during development and not at runtime. Defining the data types coming from the API will also be beneficial. TDD will be a great approach to developing the application further, currently the app has no test cases.
+
+The contact form could do with more validation, especially the phone number input.
+ 
