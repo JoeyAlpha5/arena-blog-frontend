@@ -1,72 +1,75 @@
-# Getting Started with Create React App
+# Arena Blog - Frontend
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+The Arena Blog curates travel stories from travellers from all parts of the world. If you're planning a trip to any part of the world, be sure to checkout what others have to say about the location.
 
-## Available Scripts
+This documentation provides a breakdown of the Frontend code for this application. I took inspiration from [Unsplash's](https://unsplash.com/) homepage layout and [Substack's](https://snyder.substack.com/p/what-questions-should-i-answer-about/comments?s=r) minimal blog post design when designing my application.
 
-In the project directory, you can run:
+Use the sections listed below to get started with running the application on your machine. 
 
-### `npm start`
+## Documentation sections
+- [Setting up the app](#setting-up-the-app)
+- [Third party libraries and packages use](#third-party-libraries)
+- [Application Preview](#application-preview)
+- [Future improvements](#future-improvement)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Setting up the app
 
-### `npm test`
+1. To get started, clone this repository using the following git command
+```
+git clone https://github.com/JoeyAlpha5/arena-blog-frontend.git
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+2. Once the repo has been cloned, in your terminal cd into the project folder and run the command below
 
-### `npm run build`
+```
+npm install
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+3. Once all the dependencies have been installed, start the app by running the command below
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```
+npm start
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+### Third party libraries
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+This section lists all the third party libraries, dependencies and images that have been used and the reasons for including them.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+1. [React Router](https://reactrouter.com/) has been added to provide frontend routing.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+2. [React Icons](https://react-icons.github.io/react-icons/). The Material menu and search icons have been imported from the React Icons library.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+3. [Bootstrap](https://getbootstrap.com/). The Arena Blog uses Bootstrap to achieve its minmal and responsive layout.
 
-## Learn More
+4. [React Date Formatter](https://www.npmjs.com/package/react-date-formatter). This is a JavaScript package I built and published on NPM 6 months ago. It provides an easy way to format dates by simply providing the date string and specifying the format.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+5. [Article Images](https://unsplash.com/@jalome). I've used my own stock images that I have published on Unsplash.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
+### Application preview
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Below are the app UI screenshots. These were designed in Adobe XD. The banner has been modified slightly in the actual application. Everything else remains the same. The AdobeXD file has been included in this project in the [assets](https://github.com/JoeyAlpha5/arena-blog-frontend/tree/development/src/assets) folder.
 
-### Analyzing the Bundle Size
+To switch between dark mode and light mode you can toggle your system theme on your device.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
+#### Browser Screenshots
+Home screen
+![Arena Blog](src/assets/screenshots/Home-light-mode.png?raw=true "Arena Blog - Home screen")
+![Arena Blog](src/assets/screenshots/Home-dark-mode.png?raw=true "Arena Blog - Home screen")
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Article Screen
+![Arena Blog](src/assets/screenshots/Article-light-mode.png?raw=true "Arena Blog - Article screen")
+![Arena Blog](src/assets/screenshots/Article-dark-mode.png?raw=true "Arena Blog - Article screen")
 
-### Advanced Configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+### Future improvements
 
-### Deployment
+The application is far from perfect. The app could do with a slightly better font, additional features on the article screen such as a comment section and social media share options. The app is also missing a footer.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+As the application grows, adding TypeScript would also be beneficial so that error warnings are seen during development and not at runtime. Defining the data types coming from the API will also be beneficial. TDD will be a great approach to developing the application further, currently the app has no test cases.
 
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-# adventure-blog-frontend
-# arena-blog-frontend
+The contact form could do with more validation, especially the phone number input.
+ 

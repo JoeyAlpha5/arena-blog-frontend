@@ -1,0 +1,231 @@
+body{
+    background-color: #F8F8F8;
+}
+/* homescreen stying */
+#home-screen-articles-section{
+    margin-bottom: 20px;
+}
+
+#home-screen-banner{
+    width:100%;
+    height:450px;
+    background-color:#ADADAD;
+    background-image:url('../assets/images/home-screen-background-image.jpeg');
+    background-size:cover;
+}
+
+#home-screen-banner-overlay{
+    width:100%;
+    height:100%;
+    background-color:rgb(0 0 0 / 42%);
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+#home-screen-banner-photo-credits {
+    font-size: 13px;
+}
+
+#home-screen-banner-photo-credits a{
+    text-decoration: underline !important;
+    cursor: pointer;
+}
+
+
+#home-screen-banner-quote-of-the-day{
+    font-size: 13px;
+}
+
+#home-screen-search-input{
+    width:100%;
+    height:50px;
+    border-radius:10px;
+    border:none;
+    background-color:rgb(255 255 255 / 30%);
+    color: white;
+    padding:15px;
+    font-size:20px;
+    font-weight:400;
+    outline:none;
+}
+
+#home-screen-search-input::placeholder{
+    color: white;
+    font-weight: 400;
+}
+
+#home-screen-banner-title{
+    font-size: 46px;
+}
+
+#home-screen-banner-subtitle{
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+    text-align: -webkit-center;
+    text-align: -moz-center;
+    text-align: -o-center;
+}
+
+#home-screen-search-container {
+    width: 50%;
+    display: flex;
+    position: relative;
+}
+
+
+#home-screen-banner-search-icon{
+    position: absolute;
+    right: 0;
+    margin-right: 14px;
+    margin-top: 11px;
+    cursor: pointer;
+}
+
+.container.home-screen-banner-credits-and-quotes {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.home-screen-banner-content{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+
+.home-screen-articles-container{
+    margin-top: 25px;
+}
+
+.home-screen-articles-container h1{
+    font-size: 1.2rem;
+}
+
+
+/* article screen */
+.full-article-image {
+    width: 80%;
+    height: 300px;
+    background: #ADADAD;
+    margin-top: 20px;
+    background-size: cover;
+    border-radius: 5px;
+}
+
+.container.full-article-preview-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.full-article-category-name{
+    margin-top: 20px;
+    color: rgb(0 0 0 / 69%);
+    text-align: center;
+    text-align: -webkit-center;
+    text-align: -moz-center;
+    text-align: -o-center;
+}
+
+.full-article-category-name span{
+    font-size: 13px;
+}
+
+pre{
+    margin-top: 20px;
+    white-space: pre-wrap;
+}
+
+.full-article-publisher-name{
+    font-size: 1rem;
+    margin-left: 10px;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.full-article-publisher-name:hover{
+    text-decoration: underline;
+}
+
+
+/* contact screen */
+.contact-screen-container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.contact-form-container{
+    margin-top: 50px;
+    width: 90%;
+}
+
+textarea {
+    resize: none;
+}
+
+.form-control:focus{
+    border-color: #FFA500;
+    box-shadow: 0 0 0 0.25rem rgb(255 165 0 / 28%);
+}
+
+.send-message-btn{
+    background-color: #FFA500;
+    border-color: #FFA500;
+}
+
+.send-message-btn:hover{
+    background-color: #FFA500;
+    border-color: #FFA500;
+}
+
+.btn-primary:focus{
+    border-color: #FFA500 !important;
+    background-color: #FFA500;
+    box-shadow: 0 0 0 0.25rem rgb(255 165 0 / 28%) !important;
+}
+
+@media (max-width:992px){
+    #home-screen-search-container{
+        width: 90%;
+    }
+
+    #home-screen-banner-quote-of-the-day{
+        display: none;
+    }
+
+    #home-screen-search-input::placeholder{
+        font-size: 13px;
+    }
+
+    .full-article-image{
+        width: 95%;
+    }
+    
+}
+
+/* dark mode */
+@media (prefers-color-scheme: dark) {
+    body{
+        background-color: #15181B;
+        color: white;
+    }
+
+    #home-screen-search-input{
+        background-color: rgb(0 0 0 / 30%);
+    }
+
+    .full-article-category-name{
+        color: white;
+    }
+
+    .form-control, .form-control:focus{
+        background-color: transparent;
+        color: white;
+    }
+}
